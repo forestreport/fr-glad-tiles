@@ -1,0 +1,9 @@
+version: '2'
+services:
+  tiles:
+    build:
+      context: .
+    env_file:
+      - .env-docker
+    ports:
+      - '4011:4011'

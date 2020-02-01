@@ -1,0 +1,14 @@
+[ignore]
+temp/*
+.next/*
+node_modules/*
+[libs]
+types/
+[options]
+esproposal.optional_chaining=enable
+module.ignore_non_literal_requires=true
+module.file_ext=.css
+module.file_ext=.less
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json

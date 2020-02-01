@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/env", {
+      "targets": {
+        "node": true
+      }
+    }],
+    "@babel/preset-flow"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-nullish-coalescing-operator"
+  ],
+  "sourceMaps": false,
+  "retainLines": false
+}

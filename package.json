@@ -1,0 +1,59 @@
+{
+  "name": "fr-glad-tiles",
+  "version": "1.0.0",
+  "description": "Forest Report GLAD Alert Fallback PNG Tile Service",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "eslint": "node_modules/eslint/bin/eslint.js",
+    "deploy-patch": "node patch && yarn run deploy",
+    "deploy": "/bin/sh deploy.sh"
+  },
+  "author": "Kristofor Carle <kris@maphubs.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@babel/plugin-transform-regenerator": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-flow": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "@babel/runtime": "^7.8.3",
+    "@bit/kriscarle.maphubs-utils.maphubs-utils.log": "^1.0.0",
+    "@mapbox/tilelive": "^6.1.0",
+    "@mapbox/tilelive-mapnik": "kriscarle/tilelive-mapnik#755bbf08129e70c3d2dfc28ca9fbada1667327d0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "getenv": "^1.0.0",
+    "knex": "^0.20.8",
+    "mapnik": "^4.4.0",
+    "morgan": "^1.8.2",
+    "pg": "^7.4.3",
+    "pg-native": "^3.0.0",
+    "response-time": "2.3.2",
+    "shrink-ray-current": "^4.1.2",
+    "xml": "1.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-unicorn": "^15.0.1",
+    "flow-bin": "^0.117.0",
+    "nodemon": "^2.0.2"
+  },
+  "optionalDependencies": {
+    "node-zopfli-es": "~1.0.3"
+  }
+}
